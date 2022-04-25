@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ---------------------------------------------
+                   header css
+------------------------------------------------ */
+.nav-wrapper {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.nav-img {
+  position: relative;
+  display: flex;
+  height: 100px;
+}
+
+.left-img,
+.right-img {
+  width: 30%;
+}
+
+.center-img {
+  width: 35%;
+  margin: 0 2.5%;
+}
+
+.nav-list {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+}
+
+.nav-list ul {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-item {
+  width: 25%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.8em;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  color: yellow;
+  font-weight: bold;
+  /* background-color: rgba(0, 255, 255, 0.3); */
+  transition: .3s;
+
+}
+
+
+/* ----------------------------------------------
+                  main css
+--------------------------------------------------*/
+
+/* --------
+top
+----------*/
+.top-wrapper{
+  position: relative;
+  width:100%;
+  height: 100vh;
+  background: url("../img/top_img.jpg");
+  background-size: cover;
+}
+
+.top-inner {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1%;
+}
+
+.top-inner h1 {
+  font-size: 4.5em;
+  letter-spacing: 5px;
+}
+
+.top-inner p {
+  font-size: 2em;
+  margin-top: 2%;
+}
+
+
+/* --------
+concept
+----------*/
+
+/* ↓↓共通↓↓ */
+.inner {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.section-title {
+  font-size: 3em;
+  color: #ff82ff;
+  text-align: center;
+}
+/* ↑↑↑↑↑↑↑*/
+
+.concept-section {
+  height: 900px;
+}
+
+.concept-contents {
+  display: flex;
+  margin: 5% 0;
+  /* height: 800px; */
+}
+
+.concept-contents p {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 50px;
+}
+
+.concept-right {
+  width: 45%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.concept-bottom {
+  position: absolute;
+  width: 42%;
+  margin: 35% 0 0 10%;
+}
+
+/* --------
+about
+----------*/
+.about-section {
+  height: 850px;
+}
+
+.about-contents {
+  position: relative;
+  margin: 5% 0;
+}
+
+.about-left {
+  width: 80%;
+}
+
+.about-right {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  width: 30%;
+}
+
+.about-txt {
+  position: absolute;
+  top: 0;
+  left: 16%;
+  text-align: center;
+}
+
+.about-txt h3 {
+  display: inline-block;
+  font-size: 2em;
+  margin: 3% 0;
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-txt p {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-txt a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.about-txt a:hover {
+  color: white;
+  background-color: #ff82ff;
+  transition: .3s;
+}
+
+/* --------
+inside
+----------*/
+.inside-descript {
+  position: relative;
+  margin: 5%;
+}
+
+.inside-descript::after {
+  content: "";
+  position: absolute;
+  background: url("../img/inside.png") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.inside-txt {
+  padding: 5% 0;
+  width: 50%;
+  text-align: center;
+}
+
+.inside-txt h3 {
+  font-size: 1.8em;
+  margin-bottom: 5%;
+}
+
+.inside-txt p {
+  font-size: 1.2em;
+  line-height: 30px;
+}
+
+.terrace-descript {
+  position: relative;
+}
+
+.terrace-descript::after {
+  content: "";
+  position: absolute;
+  background: url("../img/terrace.jpg") no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.terrace-txt {
+  position: relative;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.terrace-txt h3 {
+  font-size: 1.8em;
+  margin-bottom: 5%;
+}
+
+.terrace-txt p {
+  font-size: 1.2em;
+  line-height: 30px;
+}
+
+/* --------
+contact
+----------*/
+.contact-section {
+  background-color: #eee;
+}
+
+.contact-inner {
+  padding-top: 5%;
+}
+
+.contact-txt {
+  text-align: center;
+  margin: 5% 0;
+  line-height: 30px;
+}
+
+.cafe-info h1 {
+  font-size: 1.5em;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  line-height: 20px;
+  text-align: right;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: solid #eee 1px;
+  width: 60%;
+  margin-bottom: 2.5%;
+}
+
+input {
+  padding: 1%;
+  vertical-align: top;
+}
+
+textarea {
+  vertical-align: top;
+  height: 200px;
+}
+
+.button {
+  text-align: center;
+}
+
+.button-submit {
+  padding: 1% 5%;
+  background-color: #c4c4c4;
+  margin: 3% 0;
+  border: none;
+}
+
+.cafe-info {
+  text-align: center;
+  margin-top: 5%;
+  line-height: 30px;
+  padding-bottom: 5%;
+}
+
+/* ---------------------------------------------
+                  footer css
+------------------------------------------------*/
+
+.footer {
+ background-color: #626262;
+ padding: 3%;
+ text-align: center;
+ color: #fff
+}
