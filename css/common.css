@@ -127,7 +127,7 @@ concept
 /* ↑↑↑↑↑↑↑*/
 
 .concept-section {
-  height: 900px;
+  height: 950px;
 }
 
 .concept-contents {
@@ -152,7 +152,7 @@ concept
 
 .concept-bottom {
   position: absolute;
-  width: 42%;
+  width: 40%;
   margin: 35% 0 0 10%;
 }
 
@@ -160,7 +160,7 @@ concept
 about
 ----------*/
 .about-section {
-  height: 850px;
+  height: 900px;
 }
 
 .about-contents {
